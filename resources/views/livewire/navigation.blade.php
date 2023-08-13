@@ -1,4 +1,5 @@
-<nav class="bg-gray-800" x-data="{ open : false }" >
+{{-- cambiar color navbar --}}
+<nav class="" style="background-color:#215a6d" x-data="{ open : false }" >
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
 
@@ -40,6 +41,7 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               {{-- <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a> --}}
               @foreach ($categories as $category)
+              {{-- cambiar color categorias navbar --}}
                 <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">{{ $category->name }}</a> 
               @endforeach
             </div>
