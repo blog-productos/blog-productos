@@ -16,7 +16,7 @@ class Post extends Model
     }
     
     public function category (){
-        return $this->belongsTo(Cartegory::class);
+        return $this->belongsTo(Category::class);
     }
 
     //Relaacion muchos a muchos
